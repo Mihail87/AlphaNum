@@ -12,6 +12,7 @@
 		89009F6E1FCC949F00752034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89009F6C1FCC949F00752034 /* Main.storyboard */; };
 		89009F701FCC949F00752034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89009F6F1FCC949F00752034 /* Assets.xcassets */; };
 		89009F731FCC949F00752034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89009F711FCC949F00752034 /* LaunchScreen.storyboard */; };
+		89009F7D1FCCA31400752034 /* AlphabetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89009F7C1FCCA31400752034 /* AlphabetProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		89009F6F1FCC949F00752034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89009F721FCC949F00752034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89009F741FCC949F00752034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89009F7C1FCCA31400752034 /* AlphabetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				89009F6F1FCC949F00752034 /* Assets.xcassets */,
 				89009F711FCC949F00752034 /* LaunchScreen.storyboard */,
 				89009F741FCC949F00752034 /* Info.plist */,
+				89009F7C1FCCA31400752034 /* AlphabetProvider.swift */,
 			);
 			path = "Alpha Num";
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89009F7D1FCCA31400752034 /* AlphabetProvider.swift in Sources */,
 				89009F6B1FCC949F00752034 /* ViewController.swift in Sources */,
 				89009F691FCC949F00752034 /* AppDelegate.swift in Sources */,
 			);
@@ -275,6 +279,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7S7GB28P7;
 				INFOPLIST_FILE = "Alpha Num/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mihaileonte.Alpha-Num";
@@ -289,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7S7GB28P7;
 				INFOPLIST_FILE = "Alpha Num/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mihaileonte.Alpha-Num";
