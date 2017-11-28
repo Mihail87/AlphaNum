@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var correctButton: UIButton!
     @IBOutlet weak var incorrectButton: UIButton!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var reloadAlphabetButton: UIButton!
     
     let alphabetProvider = AlphabetProvider()
     let numProvider = NumProvider()
@@ -102,6 +103,7 @@ class ViewController: UIViewController {
         labelAlpha.font = labelAlpha.font.withSize(80.0)
         correctButton.isHidden = true
         incorrectButton.isHidden = true
+        reloadAlphabetButton.isHidden = true
         numericButton.isHidden = false
         numeric2Button.isHidden = false
         numeric3Button.isHidden = false
@@ -113,6 +115,7 @@ class ViewController: UIViewController {
         numeric3Button.isHidden = true
         correctButton.isHidden = false
         incorrectButton.isHidden = false
+        reloadAlphabetButton.isHidden = false
     }
     @objc func hideNumResultLabel() {
         numResultLabel.isHidden = true
@@ -165,11 +168,20 @@ class ViewController: UIViewController {
                 numericButton.isHidden = true
                 numeric2Button.isHidden = true
                 numeric3Button.isHidden = true
+                reloadAlphabetButton.isHidden = false
             } else {
                 showAlpha()
                 labelAlpha.text = alphabetProvider.randomLetters(doRemove: false)
             }
         }
     }
+    @IBAction func pressReloadAlphabet() {
+        finishedAlphabet = false
+        alphabetProvider.resetAlphabet()
+        labelAlpha.text = alphabetProvider.randomLetters(doRemove: false)
+        correctButton.isHidden = false
+        incorrectButton.isHidden = false
+    }
+    
 }
 
