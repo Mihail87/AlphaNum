@@ -80,7 +80,7 @@
                                     <constraint firstAttribute="width" constant="250" id="stC-hK-JZc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="❌ Nope!"/>
+                                <state key="normal" title="❌ Nooooo"/>
                                 <connections>
                                     <action selector="answerWrong" destination="BYZ-38-t0r" eventType="touchUpInside" id="bxH-UC-j4b"/>
                                 </connections>
@@ -92,6 +92,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="12"/>
+                                <connections>
+                                    <action selector="pressFirstButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="uhB-7s-efP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LS9-M2-lGY">
                                 <rect key="frame" x="63" y="472" width="250" height="48"/>
@@ -100,6 +103,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="13"/>
+                                <connections>
+                                    <action selector="pressSecondButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="rWM-wG-isw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wb5-7C-dI5">
                                 <rect key="frame" x="62" y="540" width="250" height="48"/>
@@ -108,7 +114,16 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="14"/>
+                                <connections>
+                                    <action selector="pressThirdButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="cey-at-vYI"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🥇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9h-TH-Tql">
+                                <rect key="frame" x="147" y="108" width="81" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -117,6 +132,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Uy-Wl-cLr" secondAttribute="trailing" constant="30" id="AM3-FN-NyA"/>
                             <constraint firstItem="GGe-Fd-pQ3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BPs-dx-l5W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZLe-Ih-nnt" secondAttribute="bottom" constant="80" id="DTW-YH-2u0"/>
+                            <constraint firstItem="Y9h-TH-Tql" firstAttribute="top" secondItem="61B-LW-C0r" secondAttribute="bottom" constant="40" id="EVg-32-ay3"/>
                             <constraint firstItem="KBH-qH-NW4" firstAttribute="top" secondItem="N5I-Ji-Bbm" secondAttribute="bottom" constant="10" id="Fb6-cg-IEM"/>
                             <constraint firstItem="KBH-qH-NW4" firstAttribute="centerX" secondItem="N5I-Ji-Bbm" secondAttribute="centerX" id="GND-f6-S6S"/>
                             <constraint firstItem="N5I-Ji-Bbm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="JgA-rl-elE"/>
@@ -131,6 +147,7 @@
                             <constraint firstItem="lLb-PQ-Gke" firstAttribute="top" secondItem="0Uy-Wl-cLr" secondAttribute="bottom" constant="10" id="bGf-LN-eAS"/>
                             <constraint firstItem="N5I-Ji-Bbm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="eMP-BQ-OgG"/>
                             <constraint firstItem="0Uy-Wl-cLr" firstAttribute="centerY" secondItem="N5I-Ji-Bbm" secondAttribute="centerY" id="gRH-0z-UDj"/>
+                            <constraint firstItem="Y9h-TH-Tql" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hrG-rE-iw6"/>
                             <constraint firstItem="Wb5-7C-dI5" firstAttribute="top" secondItem="LS9-M2-lGY" secondAttribute="bottom" constant="20" id="l8f-ei-SiA"/>
                             <constraint firstItem="7Sp-LU-uB3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lD8-nT-8Sh"/>
                             <constraint firstItem="7Sp-LU-uB3" firstAttribute="top" secondItem="61B-LW-C0r" secondAttribute="bottom" constant="150" id="uTG-z4-QGl"/>
@@ -143,6 +160,7 @@
                         <outlet property="incorrectButton" destination="ZLe-Ih-nnt" id="SqU-9m-zK2"/>
                         <outlet property="incorrectLabel" destination="lLb-PQ-Gke" id="0TQ-AZ-p4Y"/>
                         <outlet property="labelAlpha" destination="7Sp-LU-uB3" id="XS4-Ge-F6K"/>
+                        <outlet property="numResultLabel" destination="Y9h-TH-Tql" id="3vS-gt-EwV"/>
                         <outlet property="numeric2Button" destination="LS9-M2-lGY" id="nPi-v4-oOy"/>
                         <outlet property="numeric3Button" destination="Wb5-7C-dI5" id="g2b-uF-Ov7"/>
                         <outlet property="numericButton" destination="Mj4-ZR-HvR" id="xNj-4L-4Ed"/>
