@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    // git test
     @IBOutlet weak var numResultLabel: UILabel!
     @IBOutlet weak var labelAlpha: UILabel!
     @IBOutlet weak var correctLabel: UILabel!
